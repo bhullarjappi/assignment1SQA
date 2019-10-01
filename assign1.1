@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    public static class TraingleSolver
+    {
+
+        public static string Analyze(int triangleSide1, int triangleSide2, int triangleSide3) {
+            string value = string.Empty;
+            if (triangleSide1 == triangleSide2 | triangleSide2 == triangleSide3 | triangleSide3 == triangleSide1)
+            {
+                value = "Isoceles";
+            }
+            else if ((triangleSide1 != triangleSide2) || (triangleSide2 != triangleSide3) | (triangleSide3 != triangleSide1))
+            {
+                value = "Scalene";
+            }
+            else if ((triangleSide1 == triangleSide2) && (triangleSide2 == triangleSide3) & (triangleSide3 == triangleSide1))
+            {
+                value = "Equilateral";
+            }
+            else
+            {
+                value = "Do not form a triangle";
+            }
+            return value;
+        }
+
+    }
+}
