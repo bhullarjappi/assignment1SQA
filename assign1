@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1. Enter triangle dimensions\n2. Exit");
+            int ans = Convert.ToInt32(Console.ReadLine());
+            if (ans == 1)
+            {
+                do
+                {
+
+
+                    int side1 = 0;
+                    int side2 = 0;
+                    int side3 = 0;
+
+                    Console.Write("\n\n");
+                    Console.Write("Check whether a triangle is Equilateral, Isosceles or Scalene:\n");
+                    Console.Write("----------------------------------------------------------------");
+                    Console.Write("\n\n");
+
+                   
+
+                    Console.Write("Enter side 1 of triangle: ");
+                    side1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter side 2 of triangle: ");
+                    side2 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Enter side 3 of triangle: ");
+                    side3 = Convert.ToInt32(Console.ReadLine());
+
+                    
+
+                    Console.WriteLine("1. Enter triangle dimensions\n2. Exit");
+                    ans = Convert.ToInt32(Console.ReadLine());
+                } while (ans == 1);
+            } 
+        }
+    }
+}
